@@ -1,2 +1,19 @@
 @import "@/assets/scss/_variables.scss";
 
+footer {
+    position: fixed;
+    padding: 20px;
+    bottom: 0;
+    width: 100%;
+    display: block;
+    text-align: center;
+    color: $default-white;
+
+    a {
+        color: $hover-button-color;
+
+        &:hover {
+            color: $primary-orange;
+        }
+    }
+}

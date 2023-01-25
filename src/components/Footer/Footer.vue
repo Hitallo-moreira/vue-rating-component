@@ -9,3 +9,5 @@ export default {
     name: "Footer"
 }
 </script>
+
+<style src="./footer.scss" lang="scss" scoped/>
