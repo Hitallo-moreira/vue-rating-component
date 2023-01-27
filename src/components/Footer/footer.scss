@@ -1,8 +1,8 @@
 @import "@/assets/scss/_variables.scss";
 
 footer {
-    position: fixed;
-    padding: 20px;
+    padding: 40px;
+    position: absolute;
     bottom: 0;
     width: 100%;
     display: block;
@@ -11,9 +11,22 @@ footer {
 
     a {
         color: $hover-button-color;
+        text-decoration: none;
 
         &:hover {
             color: $primary-orange;
+        }
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    footer {
+        font-size: 13px;
+        display: flex;
+        flex-direction: column;
+
+        .codeby {
+            margin-top: 5px;
         }
     }
 }
