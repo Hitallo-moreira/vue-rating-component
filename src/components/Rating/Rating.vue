@@ -36,9 +36,11 @@
           </ul>
         </div>
       </div>
-      <button id="btn">
-        <router-link to="/sucess">Submit</router-link>
-      </button>
+      <router-link to="/sucess">
+        <button id="btn">
+          <span>Submit</span>
+        </button>
+      </router-link>
     </div>
   </div>
 </template>
