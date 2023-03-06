@@ -1,0 +1,74 @@
+@import "@/assets/scss/_variables.scss";
+
+.sucess {
+    height: 100vh;
+
+    .main-sucess {
+        display: block;
+        margin: 0 auto;
+        position: relative;
+        top: 10%;
+        width: 400px;
+        height: 380px;
+        background-color: $modal-background-color;
+        border-radius: 30px;
+        padding: 40px 35px;
+    
+        .modal-sucess-header {
+            margin-bottom: 20px;
+        
+            .thanks-image {
+                text-align: center;
+            }
+        }
+    
+        .rate-result {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 30px;
+            width: 190px;
+            border-radius: 30px;
+            background-color: $medium-grey;
+            color: $primary-orange;
+            font-size: $medium-size;
+            margin: 0 auto;
+            padding: 9px;
+        }
+    
+        .modal-sucess-content {
+            margin-top: 40px;
+            text-align: center;
+    
+            h1 {
+                color: $default-white;
+                font-size: $title-medium;
+                margin-bottom: 10px;
+            }
+    
+            p {
+                color: $light-grey;
+                font-size: $medium-size;
+                line-height: 20px;
+            }
+        }
+    }   
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .sucess {
+        .main-sucess {
+            width: 90%;
+            height: 350px;
+            padding: 25px;
+    
+            .modal-sucess-content {
+                margin-top: 30px;
+    
+                h1 {
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+}

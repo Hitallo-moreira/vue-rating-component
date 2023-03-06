@@ -1,5 +1,11 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+  <Sucess />
 </template>
+<script>
+import Sucess from '../components/Sucess/Sucess.vue'
+export default {
+  components: {
+    Sucess
+  }
+}
+</script>

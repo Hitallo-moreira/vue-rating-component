@@ -18,20 +18,20 @@
       <div class="rate-options">
         <div class="rate">
           <ul>
-            <li>
-              <a id="1" onClick="getRate(this.id)">1</a>
+            <li id="1" v-on:click="select($event)">
+              <a>1</a>
             </li>
-            <li>
-              <a id="2" onClick="getRate(this.id)">2</a>
+            <li id="2" v-on:click="select($event)">
+              <a>2</a>
             </li>
-            <li>
-              <a id="3" onClick="getRate(this.id)">3</a>
+            <li id="3" v-on:click="select($event)">
+              <a>3</a>
             </li>
-            <li>
-              <a id="4" onClick="getRate(this.id)">4</a>
+            <li id="4" v-on:click="select($event)">
+              <a>4</a>
             </li>
-            <li>
-              <a id="5" onClick="getRate(this.id)">5</a>
+            <li id="5" v-on:click="select($event)">
+              <a>5</a>
             </li>
           </ul>
         </div>
@@ -45,11 +45,20 @@
   </div>
 </template>
 <script>
+export { targetId }
+
 export default {
   name: "Rating",
+
   data() {
     return {
-        icon_src: ('/img/icon-star.svg'),
+      icon_src: ('/img/icon-star.svg'),
+    }
+  },
+  methods: {
+    select: function(event) {
+      let targetId = event.currentTarget.id;
+        alert(targetId);
     }
   }
 }

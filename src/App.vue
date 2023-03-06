@@ -1,7 +1,5 @@
 <template>
   <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/sucess">Sucess</router-link>
     <Footer />
   </nav>
   <router-view/>
@@ -16,7 +14,9 @@ export default {
   }
 }
 </script>
-<style>
+<style lang="scss">
+  @import "@/assets/scss/_variables.scss";
+  
   * {
       margin: 0;
       padding: 0;
@@ -25,7 +25,6 @@ export default {
   }
 
   body {
-    height: 100vh;
-    background-color: #121417;
+    background-color: $very-dark-blue;
   }
 </style>
