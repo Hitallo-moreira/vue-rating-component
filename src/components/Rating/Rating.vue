@@ -45,8 +45,6 @@
   </div>
 </template>
 <script>
-export { targetId }
-
 export default {
   name: "Rating",
 
@@ -58,7 +56,6 @@ export default {
   methods: {
     select: function(event) {
       let targetId = event.currentTarget.id;
-        alert(targetId);
     }
   }
 }
