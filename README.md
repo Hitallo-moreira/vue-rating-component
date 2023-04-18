@@ -53,6 +53,3 @@ npm run serve
 
 - [x] Coleta de avaliação do usuário
 
-# Adicionando avaliação
-![](https://github.com/Hitallo-moreira/vue-rating-component/blob/main/rate.gif)
-
