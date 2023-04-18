@@ -80,7 +80,8 @@
                             padding: 15px;
                             cursor: pointer;
                             transition: 0.3s;
-    
+                            user-select: none;
+                            
                             &:hover {
                                 color: $default-white;
                             }

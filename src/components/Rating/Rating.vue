@@ -47,7 +47,12 @@
 <script>
 export default {
   name: "Rating",
-
+  props: {
+    selected: {
+      type: Number,
+      default: 0
+    }
+  },
   data() {
     return {
       icon_src: ('/img/icon-star.svg'),
@@ -56,6 +61,8 @@ export default {
   methods: {
     select: function(event) {
       let targetId = event.currentTarget.id;
+      this.$root.rating = targetId;
+
     }
   }
 }
