@@ -9,7 +9,7 @@ Componente de avaliação feito com Vue</p>
   <a href="#features">Features</a>
 </p>
 <h4 align="center">
-	Acesse em: <a href="https://hratingcomponent.netlify.app/" target="_blank">Rating component</a>
+	Acesse em: <a href="https://hratingcomponent.netlify.app/](https://tela-login-black.vercel.app/" target="_blank">Rating component</a>
 </h4>
 
 <h2 id="sobre">Sobre</h2>
